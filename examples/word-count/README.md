@@ -99,9 +99,9 @@ running!
 
 Let's publish a couple of records and see the result:
 ```
-(publish (:input (topic-metadata)) nil "all streams lead to kafka")
-(publish (:input (topic-metadata)) nil "hello kafka streams")
-(get-keyvals (:output (topic-metadata)))
+(publish (:input topic-metadata) nil "all streams lead to kafka")
+(publish (:input topic-metadata) nil "hello kafka streams")
+(get-keyvals (:output topic-metadata))
 ```
 
 You should see output like the following:
